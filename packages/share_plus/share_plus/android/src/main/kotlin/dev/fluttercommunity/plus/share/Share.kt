@@ -110,6 +110,7 @@ internal class Share(
                 if (!subject.isNullOrBlank()) putExtra(Intent.EXTRA_SUBJECT, subject)
                 if (!title.isNullOrBlank()) putExtra(Intent.EXTRA_TITLE, title)
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
             }
         }
 
